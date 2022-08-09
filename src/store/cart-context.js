@@ -1,7 +1,5 @@
 import React from "react";
 
-
-// Default context
 const CartContext = React.createContext({
   items: [],
   totalAmount: 0,
