@@ -12,8 +12,6 @@ const HeaderCartButton = (props) => {
     return curNumber + item.amount;
   }, 0);
 
-  // Added bump animation after an item is added to the cart
-
   const btnClasses = `${classes.button} ${
     btnIsHighlighted ? classes.bump : ""
   }`;
