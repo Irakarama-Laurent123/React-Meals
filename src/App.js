@@ -15,7 +15,6 @@ function App() {
   };
 
   return (
-    //Started using useContext
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
