@@ -6,7 +6,6 @@ const defaultCartState = {
   totalAmount: 0,
 };
 
-//added useReducer for complex state management
 const cartReducer = (state, action) => {
   if (action.type === "ADD") {
     const updatedTotalAmount =
@@ -80,7 +79,6 @@ const CartProvider = (props) => {
     removeItem: removeItemFromCartHandler,
   };
   return (
-    // Providing the context
     <CartContext.Provider value={cartContext}>
       {props.children}
     </CartContext.Provider>
